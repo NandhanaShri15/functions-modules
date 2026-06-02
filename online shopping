@@ -1,0 +1,37 @@
+def getinput(n):
+    l=[]
+    for i in range(n):
+        name=input("Enter item name: ")
+        qty=int(input("Enter quantity: "))
+        p=int(input("Enter price: "))
+        l.append([name,qty,p])
+    return l
+def subtotal(l,n):
+    s=[]
+    for i in range(len(l)):
+        sub=l[i][1]*l[i][2]
+        s.append(sub)
+    return s
+def total(s,n):
+    t=0
+    for i in range(0,len(s)):
+        t=t+s[i]
+        print("Total:",t)
+        if t>3000:
+            d=t*(10/100)
+            t=t-d
+            print("After discount:",t)
+        else:
+            d=0
+            t=t+d
+            print("After discount:",t)
+        g=t*(5/100)
+        t=g+t
+        print("GST:",g)
+        print("Final amount:",t)
+n=int(input("Enter number of items: "))
+r= getinput(n)
+print("Items:",r)
+s=subtotal(r,n)
+print("Subtotal:",s)
+print(total(s,n))
