@@ -1,0 +1,9 @@
+def digit(n):
+   d=0
+   if n==0:
+      return 0
+   else:
+      d+=(n%10)+digit(n//10)
+      return d
+n=int(input("Enter num:"))
+print (digit(n))
