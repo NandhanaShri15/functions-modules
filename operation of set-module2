@@ -1,0 +1,7 @@
+import ex4g1
+s1=set(map(int,input("Elements:").split()))
+s2=set(map(int,input("Elements:").split()))
+print("Union\n",ex4g1.sunion(s1,s2))
+print("Intersection\n",ex4g1.sintersection(s1,s2))
+print("Difference\n",ex4g1.sdifference(s1,s2))
+print("Symmetric\n",ex4g1.ssymmetric(s1,s2))
