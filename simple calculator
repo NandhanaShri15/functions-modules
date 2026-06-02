@@ -1,0 +1,27 @@
+def sum1(a,b):
+    return a+b
+def diff(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+def fdiv(a,b):
+    return a//b
+print("1/Add\n2.Difference\n3.Multiply\n4.Divide\n5.Floor Division\n6.Modulo")
+choice = int(input("Enter your choice: "))
+a,b=map(int,input("Enter two numbers: ").split())
+if choice==1:
+    print(sum1(a,b))
+elif choice==2:
+    print(diff(a,b))
+elif choice==3:
+    print(mul(a,b))
+elif choice==4:
+    print(div(a,b))
+elif choice==5:
+    print(fdiv(a,b))
+elif choice==6:
+    print(mod(a,b))
+else:
+    print("Invalid")
