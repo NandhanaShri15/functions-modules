@@ -1,0 +1,6 @@
+import ex4f1
+n=int(input("Enter num:"))
+print("Factors",end=" ")
+print(ex4f1.factors(n))
+print("Prime factors",end="")
+print(ex4f1.pfactors(n))
